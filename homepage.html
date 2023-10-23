@@ -10,33 +10,53 @@
 <body>
     
     <div class="sticky-top">
-        <nav class="navbar px-5 py-3">
+        <nav class="navbar navbar-expand-lg px-5 py-0">
             <div class="container-fluid">
-                <a class="navbar-brand fs-4" href="homepage.html"><span>P</span>ort<span>F</span>olio</a>
+                <a class="navbar-brand fs-1" href="homepage.html"><span>P</span>ort<span>F</span>olio</a>
+
+                <button class="navbar-toggler border-0 outline-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <nav id="navbar-scrollspy">
-                    <ul class="nav justify-content-end">
-                        <li class="nav-item">
-                            <a href="#scrollspyHeading1" class="nav-link" aria-current="page">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#scrollspyHeading2" class="nav-link">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#scrollspyHeading3" class="nav-link">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#scrollspyHeading4" class="nav-link">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#scrollspyHeading5" class="nav-link">Contact</a>
-                        </li>
+                    <ul class="nav">
+                        <li class="nav-item"><a href="homepage.html" class="nav-link" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                        <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                        <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                        <li class="nav-item"><a href="#contact" class="nav-link pe-0">Contact</a></li>
                     </ul>
                 </nav>
+                </div>
             </div>
         </nav>
     </div>
 
+    <div class="home-container p-5">
+        <div class="home-content p-5">
+            <h1>Hola!<br> I'm <span>John Doe</span></h1>
+            <p class="ps-1">An undergraduate, learning and paving own career path.</p>
+            <div class="ps-1">
+                <a class="btn btn-outline-dark fs-5 px-5">Hire Me</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-down text-center mt-5">
+        <a href="#scrollspyHeading5" class="nav-link rounded-pill" style="display: inline-block;">
+            <i class="fa-solid fa-angles-down fa-bounce fa-xl" style="color: #000000;"></i>
+        </a>
+    </div>
+
+    <div class="about-container mt-5 p-5" id="about">
+        <div class="about-content p-5">
+            <h1>About Me</h1>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/296ff2fa8f.js" crossorigin="anonymous"></script>
 
 </body>
 </html>

@@ -11,8 +11,12 @@ html{
     scroll-behavior: smooth;
 }
 
-.navbar{
+.navbar, .home-container{
     background-color: #f4f5fe;
+}
+
+.navbar span, .home-container span{
+    color: #2c4bff;
 }
 
 .nav-link{
@@ -22,4 +26,21 @@ html{
 
 .nav-link:hover{
     color: #2c4bff;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.home-container{
+    height: 75vh;
+}
+
+.home-content{
+    margin-left: 1.25vw;
+}
+
+.home-container h1{
+    font-size: 5rem;
 }
