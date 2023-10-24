@@ -44,3 +44,7 @@ html{
 .home-container h1{
     font-size: 5rem;
 }
+
+.about-me p{
+    text-align: justify;
+}
