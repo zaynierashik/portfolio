@@ -49,6 +49,12 @@ html{
     text-align: justify;
 }
 
-/* .service-container p{
-    text-align: justify;
-} */
+.service-container .card{
+    transition:  transform 0.5s;
+    cursor: pointer;
+}
+
+.service-container .card:hover{
+    transform: scale(1.025);
+    background-color: #f4f5fe;
+}
