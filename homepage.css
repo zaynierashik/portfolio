@@ -67,3 +67,49 @@ a{
 .skill-container p{
     text-align: justify;
 }
+
+.dark-theme{
+    background-color: #121212;
+    color: white;
+}
+
+.dark-theme .navbar, .dark-theme .home-container{
+    background-color: #181b21;
+    color: white;
+}
+
+.dark-theme .navbar-brand{
+    color: white;
+}
+
+.dark-theme .navbar .nav-link{
+    color: white;
+}
+
+.dark-theme .navbar .nav-link:hover{
+    color: #2c4bff;
+}
+
+.dark-theme .btn{
+    color: white;
+    outline: 1px solid white;
+}
+
+.dark-theme .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.dark-theme i{
+    color: white;
+}
+
+.dark-theme .service-container .card{
+    background-color: #181b21;
+    color: white;
+}
+
+.dark-theme input, .dark-theme input:focus, .dark-theme input::placeholder, .dark-theme textarea, .dark-theme textarea:focus{
+    background-color: #181b21;
+    color: white;
+}
