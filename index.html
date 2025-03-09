@@ -1,297 +1,282 @@
 <!doctype html>
-<html lang="en">
-  <head>
+<html lang="en" class="dark">
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Designer Portfolio</title>
-    <!-- Inter font from Google Fonts -->
+    <title>Portfolio</title>
+	
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
     <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-            },
-          },
-        },
-      }
+		tailwind.config = {
+			theme: {
+			extend: {
+				fontFamily: {
+				sans: ['Inter', 'sans-serif'],
+				},
+			},
+			},
+		}
     </script>
+
     <style>
-      body {
-        font-family: 'Inter', sans-serif;
-      }
+		body {
+			font-family: 'Inter', sans-serif;
+		}
     </style>
-  </head>
-  <body>
-    <div class="min-h-screen bg-white">
+</head>
+<body>
+    <div class="min-h-screen bg-white text-black dark:bg-black dark:text-white">
       <!-- Navigation -->
-      <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center">
-        <div class="flex items-center">
-          <h1 class="text-xl font-medium text-gray-500">show<span class="text-black font-bold">casy.</span></h1>
-        </div>
-        <div class="flex items-center gap-4">
-          <a href="#contact" class="hidden sm:flex items-center gap-2 px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors">
-            Let's Talk 
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-          </a>
-          <button class="p-2 rounded-full hover:bg-gray-100">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-          </button>
-        </div>
-      </nav>
+		<nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-6">
+			<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
+				<div class="flex items-center">
+					<h1 class="text-xl font-medium text-gray-500">rashik<span class="text-black font-bold text-black dark:bg-black dark:text-white">chauhan.</span></h1>
+				</div>
+					
+				<a onclick="scrollToSection('contact')" class="hidden sm:flex items-center cursor-pointer gap-2 px-6 py-3 border border-gray-300 rounded-full hover:bg-gray-50 transition-colors dark:text-white dark:bg-black hover:text-black">
+					Let's Talk 
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+				</a>
+			</div>
+		</nav>
 
-      <!-- Hero Section -->
-      <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
-        <div class="max-w-6xl mx-auto">
-          <!-- Main Headline -->
-          <h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight mb-8">
-            I'm a visual designer with passion to create <span class="text-gray-300">a great experiences</span>
-          </h2>
+		<!-- Hero Section -->
+		<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-24">
+			<div class="max-w-7xl mx-auto">
+				<h2 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight tracking-tight mb-8">
+					Turning complex ideas into <span class="text-[#b6bcc6]">powerful web solutions.</span>
+				</h2>
 
-          <div class="flex flex-col md:flex-row md:items-center gap-8 mt-16">
-            <div class="w-full md:w-1/2">
-              <div class="border-t border-gray-200 pt-4"></div>
-            </div>
-            <div class="w-full md:w-1/2">
-              <p class="text-lg md:text-xl text-gray-700">
-                I'm Ivan, a Visual Designer living in Munich, and I focus on making digital experiences that are easy to use, enjoyable, and get the job done.
-              </p>
-            </div>
-          </div>
-        </div>
-      </main>
+				<div class="flex flex-col md:flex-row md:items-center gap-8 mt-20">
+					<div class="w-full md:w-1/2">
+						<div class="border-t border-gray-200 pt-4"></div>
+					</div>
+					<div class="w-full md:w-1/2">
+						<p class="text-lg text-gray-700 text-justify dark:text-gray-500">
+							I'm Rashik Chauhan, a Full-Stack Developer based in Kathmandu, building scalable and user-friendly web applications.
+						</p>
+					</div>
+				</div>
+			</div>
+		</main>
 
-      <!-- About Section with Image -->
-      <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div>
-            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Designer portrait" class="rounded-lg w-full h-auto object-cover aspect-[4/5]">
-          </div>
-          <div>
-            <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-8">Design that sparks engagement and inspires action</h2>
-            <p class="text-lg text-gray-700 mb-8">
-              Concentrate on your primary objective which is expanding your business, and leave it to me to ensure that your business is efficiently portrayed in the digital realm and distinguishes itself from the rivals.
-            </p>
-            <a href="#about" class="inline-flex items-center gap-2 text-black font-medium">
-              About Me
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-      </section>
+		<!-- Social Media Section -->
+		<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+			<div class="max-w-7xl mx-auto gap-8">
+				<div class="flex flex-col sm:flex-row gap-8">
+					<a href="https://www.linkedin.com/in/rashikchauhan/" target="_blank" class="flex items-center gap-2 text-black dark:text-white">
+						LINKEDIN 
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+					</a>
+					<a href="https://www.instagram.com/zaynierashik/" target="_blank" class="flex items-center gap-2 text-black dark:text-white">
+						INSTAGRAM
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+					</a>
+					<a href="https://www.facebook.com/zaynie.rashik.3" target="_blank" class="flex items-center gap-2 text-black dark:text-white">
+						FACEBOOK
+						<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+					</a>
+				</div>
+			</div>
+		</section>
 
-      <!-- Portfolio Section -->
-      <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-16">Discover my latest works</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <!-- Project 1 -->
-            <div class="group">
-              <div class="bg-gray-100 rounded-lg overflow-hidden mb-4">
-                <img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Estatery Project" class="w-full h-auto object-cover aspect-video">
-              </div>
-              <div class="flex justify-between items-start">
-                <div>
-                  <h3 class="text-2xl font-bold">Estatery</h3>
-                  <p class="text-gray-600">UI/UX</p>
-                </div>
-                <a href="#" class="p-3 rounded-full border border-gray-300 group-hover:bg-black group-hover:text-white group-hover:border-black transition-all">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                </a>
-              </div>
-            </div>
-            
-            <!-- Project 2 -->
-            <div class="group">
-              <div class="bg-gray-100 rounded-lg overflow-hidden mb-4">
-                <img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Wepay Project" class="w-full h-auto object-cover aspect-video">
-              </div>
-              <div class="flex justify-between items-start">
-                <div>
-                  <h3 class="text-2xl font-bold">Wepay</h3>
-                  <p class="text-gray-600">Branding</p>
-                </div>
-                <a href="#" class="p-3 rounded-full border border-gray-300 group-hover:bg-black group-hover:text-white group-hover:border-black transition-all">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="flex justify-center mt-12">
-            <a href="#works" class="inline-flex items-center gap-2 text-black font-medium">
-              View All Works
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-      </section>
+		<!-- About Section -->
+		<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+			<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+				<div>
+					<img src="./images/profile.jpg" alt="Designer portrait" class="rounded-lg w-full h-auto object-cover aspect-[5/5]">
+				</div>
+				<div>
+					<h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-8">Transforming ideas into scalable digital solutions</h2>
+					<p class="text-lg text-gray-700 text-justify dark:text-gray-500 mb-8">
+						Focus on growing your business while I handle the tech. As a full-stack developer, I specialize in building seamless, high-performance web solutions that enhance your brand, captivate users, and set you apart from the competition. Let’s turn your vision into a digital powerhouse.
+					</p>
+				</div>
+			</div>
+		</section>
 
-      <!-- Clients Section -->
-      <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-16">A visual partner for brands, companies, and agencies</h2>
-          
-          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
-            <div class="flex flex-col">
-              <div class="text-4xl text-gray-300 font-bold mb-4">pipefy</div>
-              <div class="text-lg font-medium">UI/UX & Branding</div>
-              <div class="text-gray-500">2022</div>
-            </div>
-            <div class="flex flex-col">
-              <div class="text-4xl text-gray-300 font-bold mb-4">django</div>
-              <div class="text-lg font-medium">UI/UX & Branding</div>
-              <div class="text-gray-500">2022</div>
-            </div>
-            <div class="flex flex-col">
-              <div class="text-4xl text-gray-300 font-bold mb-4">rackspace</div>
-              <div class="text-lg font-medium">UI/UX & Branding</div>
-              <div class="text-gray-500">2022</div>
-            </div>
-            <div class="flex flex-col">
-              <div class="text-4xl text-gray-300 font-bold mb-4">portal</div>
-              <div class="text-lg font-medium">UI/UX & Branding</div>
-              <div class="text-gray-500">2022</div>
-            </div>
-          </div>
-        </div>
-      </section>
+		<!-- Skills Section -->
+		<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+			<div class="max-w-7xl mx-auto">
+				<h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-16">Skills</h2>
+				
+				<div class="grid grid-cols-2 md:grid-cols-4 gap-8 gap-y-16 mb-16">
+					<div class="flex flex-col items-center gap-y-3">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" class="w-16"/>
+						<div class="text-4xl text-[#b6bcc6] font-bold">bootstrap</div>
+					</div>
 
-      <!-- Testimonials Section -->
-      <section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-16">Let's see what my clients say</h2>
-          
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <!-- Testimonial 1 -->
-            <div class="flex flex-col">
-              <div class="mb-8">
-                <p class="text-xl">"I had the pleasure of working with Ivan on a recent project, and I was blown away by their creativity and attention to detail. I highly recommend Daniel for anyone looking for a talented and professional designer."</p>
-              </div>
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Richard Jonas" class="w-full h-full object-cover">
-                </div>
-                <div>
-                  <div class="font-bold">Richard Jonas</div>
-                  <div class="text-gray-600">CEO of Teamwork</div>
-                </div>
-                <div class="ml-auto text-3xl text-gray-300 font-bold">teamwork.</div>
-              </div>
-            </div>
-            
-            <!-- Testimonial 2 -->
-            <div class="flex flex-col">
-              <div class="mb-8">
-                <p class="text-xl">"His professionalism, responsiveness, and dedication to delivering high-quality work have exceeded our expectations. We are incredibly grateful for Sarah's contributions and would highly recommend her to anyone in need of a talented and reliable designer."</p>
-              </div>
-              <div class="flex items-center gap-4">
-                <div class="w-12 h-12 rounded-full overflow-hidden bg-gray-200">
-                  <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Savanah Megan" class="w-full h-full object-cover">
-                </div>
-                <div>
-                  <div class="font-bold">Savanah Megan</div>
-                  <div class="text-gray-600">CEO of Django</div>
-                </div>
-                <div class="ml-auto text-3xl text-gray-300 font-bold">django</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+					<div class="flex flex-col items-center gap-y-3">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="w-16"/>
+						<div class="text-4xl text-[#b6bcc6] font-bold">css</div>
+					</div>
 
-      <!-- Contact Section -->
-      <section id="contact" class="bg-black text-white py-16 md:py-24">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-12">HAVE A NICE WORKS? LET'S TALK WITH ME</h2>
-            
-            <a href="mailto:hello@kazarov.com" class="inline-flex items-center gap-4 text-5xl sm:text-6xl md:text-7xl font-bold hover:text-gray-300 transition-colors">
-              hello@kazarov.com
-              <span class="p-4 bg-gray-800 rounded-full">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-              </span>
-            </a>
-            
-            <div class="mt-24 border-t border-gray-800 pt-12">
-              <div class="flex flex-col md:flex-row justify-between">
-                <div class="flex gap-8 mb-8 md:mb-0">
-                  <a href="#" class="text-white hover:text-gray-300">HOME</a>
-                  <a href="#" class="text-white hover:text-gray-300">ABOUT ME</a>
-                  <a href="#" class="text-white hover:text-gray-300">WORKS</a>
-                  <a href="#" class="text-white hover:text-gray-300">INSIGHTS</a>
-                </div>
-                
-                <div class="flex gap-6">
-                  <a href="#" class="text-white hover:text-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-                  </a>
-                  <a href="#" class="text-white hover:text-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-youtube"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
-                  </a>
-                  <a href="#" class="text-white hover:text-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-tiktok"><path d="M9 12a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/><path d="M15 8a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"/><path d="M15 2v20"/><path d="M9 16v6"/></svg>
-                  </a>
-                  <a href="#" class="text-white hover:text-gray-300">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                  </a>
-                </div>
-              </div>
-              
-              <div class="mt-12">
-                <h3 class="text-xl text-gray-500 mb-4">Keep up with me if you can.</h3>
-                <div class="flex items-center">
-                  <input type="email" placeholder="Enter your email" class="bg-transparent border-b border-gray-700 py-2 pr-4 text-white placeholder-gray-500 focus:outline-none focus:border-gray-500 w-full md:w-64">
-                  <button class="ml-4 p-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-                  </button>
-                </div>
-              </div>
-              
-              <div class="mt-12 text-gray-500 text-sm">
-                ©2023. Designed by Pixeflow - Powered by Webflow
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+					<div class="flex flex-col items-center gap-y-3">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" class="w-16"/>
+						<div class="text-4xl text-[#b6bcc6] font-bold">django</div>
+					</div>
 
-      <!-- Footer -->
-      <footer class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-8">
-          <div class="flex flex-col sm:flex-row gap-8">
-            <a href="#instagram" class="flex items-center gap-2 text-black hover:underline">
-              INSTAGRAM 
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </a>
-            <a href="#behance" class="flex items-center gap-2 text-black hover:underline">
-              BEHANCE 
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </a>
-            <a href="#dribbble" class="flex items-center gap-2 text-black hover:underline">
-              DRIBBBLE 
-              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-            </a>
-          </div>
-          
-          <a href="#contact" class="flex items-center gap-2 px-8 py-4 bg-black text-white rounded-full hover:bg-gray-800 transition-colors">
-            Let's Talk 
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
-          </a>
-        </div>
-        
-        <div class="max-w-6xl mx-auto mt-8 flex justify-end">
-          <div class="flex items-center gap-2 text-xs text-gray-500">
-            Made in Webflow
-          </div>
-        </div>
-      </footer>
+					<div class="flex flex-col items-center gap-y-3">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="w-16"/>
+						<div class="text-4xl text-[#b6bcc6] font-bold">git</div>
+					</div>
+
+					<div class="flex flex-col items-center gap-y-3">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="w-16"/>
+						<div class="text-4xl text-[#b6bcc6] font-bold">html</div>
+					</div>
+
+					<div class="flex flex-col items-center gap-y-3">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="w-16"/>
+					  	<div class="text-4xl text-[#b6bcc6] font-bold">php</div>
+					</div>
+
+					<div class="flex flex-col items-center gap-y-3">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="w-16"/>
+					  	<div class="text-4xl text-[#b6bcc6] font-bold">python</div>
+					</div>
+
+					<div class="flex flex-col items-center gap-y-3">
+						<img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" class="w-16"/>
+						<div class="text-4xl text-[#b6bcc6] font-bold">tailwindcss</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Works Section -->
+		<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+			<div class="max-w-7xl mx-auto">
+				<h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-16">Discover my latest works</h2>
+				
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+					<div class="group">
+						<div class="bg-gray-100 rounded-lg overflow-hidden mb-4">
+							<img src="./images/hamrocollege.png" alt="hamrocollege" class="w-full h-auto object-cover aspect-video">
+						</div>
+
+						<div class="flex justify-between items-start">
+							<div>
+								<h3 class="text-2xl font-bold">hamrocollege - college information system</h3>
+								<p class="text-gray-500">Full-Stack</p>
+							</div>
+							<a href="https://github.com/zaynierashik/hamrocollege" target="_blank" class="p-3 rounded-full border border-gray-300 hover:bg-black hover:text-white hover:border-black dark:hover:bg-gray-50 dark:hover:text-black transition-all">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+							</a>
+						</div>
+					</div>
+					
+					<div class="group">
+						<div class="bg-gray-100 rounded-lg overflow-hidden mb-4">
+							<img src="./images/crm.png" alt="crm" class="w-full h-auto object-cover aspect-video">
+						</div>
+
+						<div class="flex justify-between items-start">
+							<div>
+								<h3 class="text-2xl font-bold">customer relationship management system</h3>
+								<p class="text-gray-500">Full-Stack</p>
+							</div>
+							<a href="https://github.com/zaynierashik/crm" target="_blank" class="p-3 rounded-full border border-gray-300 hover:bg-black hover:text-white hover:border-black dark:hover:bg-gray-50 dark:hover:text-black transition-all">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="group">
+						<div class="bg-gray-100 rounded-lg overflow-hidden mb-4">
+							<img src="./images/legoempire.png" alt="legoempire" class="w-full h-auto object-cover aspect-video">
+						</div>
+
+						<div class="flex justify-between items-start">
+							<div>
+								<h3 class="text-2xl font-bold">legoempire - ecommerce system</h3>
+								<p class="text-gray-500">Full-Stack</p>
+							</div>
+							<a href="https://github.com/zaynierashik/legoempire" target="_blank" class="p-3 rounded-full border border-gray-300 hover:bg-black hover:text-white hover:border-black dark:hover:bg-gray-50 dark:hover:text-black transition-all">
+								<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+							</a>
+						</div>
+					</div>
+
+					<div class="group">
+						<div class="bg-gray-100 rounded-lg overflow-hidden mb-4">
+							<img src="./images/ams.png" alt="ams" class="w-full h-auto object-cover aspect-video">
+						</div>
+
+						<div class="flex justify-between items-start">
+							<div>
+								<h3 class="text-2xl font-bold">attendance management system</h3>
+								<p class="text-gray-500">Assistant Project Manager</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Experience Section -->
+		<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+			<div class="max-w-7xl mx-auto text-justify">
+				<h2 class="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-16">Experience</h2>
+				
+				<div>
+					<div class="flex flex-col">
+						<div class="mb-8">
+							<p class="text-xl dark:text-[#b6bcc6]">"Worked as an Assistant Project Manager, coordinating development efforts, managing project timelines, and ensuring smooth collaboration between teams. Actively contributed to backend development using Python and Django, implementing scalable APIs, optimizing database performance, and integrating third-party services to enhance functionality."</p>
+						</div>
+						
+						<div class="ml-auto text-3xl text-gray-500 font-bold">ayata inc.</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Section -->
+		<footer id="contact" class="bg-black text-white pt-16 pb-5 md:pt-24">
+			<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="max-w-7xl mx-auto">
+					<h2 class="text-2xl font-bold mb-5">HAVE A NICE WORKS? LET'S TALK WITH ME</h2>
+					
+					<a href="mailto:zaynierashik@gmail.com" class="inline-flex items-center gap-4 text-5xl sm:text-6xl md:text-7xl font-bold hover:text-[#b6bcc6] transition-colors">
+						zaynierashik@gmail.com
+						<span class="p-4 bg-gray-800 rounded-full">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-up-right"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+						</span>
+					</a>
+					
+					<div class="mt-24 border-t border-gray-800 pt-12">
+						<div class="flex flex-col md:flex-row justify-between">
+							<div class="text-gray-500 text-sm">
+								©2025. Designed by Rashik Chauhan.
+							</div>
+							
+							<div>
+								<a href="https://github.com/zaynierashik" target="_blank" class="text-white hover:text-[#b6bcc6]">
+									<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github">
+										<path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7a5.44 5.44 0 0 0-1.5-3.75 5.07 5.07 0 0 0-.09-3.77s-1.18-.38-3.91 1.48a13.38 13.38 0 0 0-7 0C5.27.62 4.09 1 4.09 1a5.07 5.07 0 0 0-.09 3.77A5.44 5.44 0 0 0 2.5 8.5c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 8 18.13V22"/>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
     </div>
-  </body>
+
+	<script>
+		function scrollToSection(sectionId){
+			var section = document.getElementById(sectionId);
+			if(section){
+				section.scrollIntoView({ behavior: 'smooth' });
+			}
+		}
+	</script>
+</body>
 </html>
